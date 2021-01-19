@@ -16,8 +16,17 @@ wp-content/themes/twenty*/
 
 # ignore node dependency directories
 node_modules/
+vendor/
 
 # ignore log files and databases
 *.log
 *.sql
 *.sqlite
+
+# ignore default files PhpStorm
+/.idea
+
+
+# ignore file composer.lock and pakage-log.json
+composer.lock
+package-lock.json
