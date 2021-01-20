@@ -56,6 +56,6 @@ function orange_theme_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function orange_theme_customize_preview_js() {
-	wp_enqueue_script( 'orange-theme-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
+	wp_enqueue_script( 'orange-theme-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _ORANGE_THEME_VERSION, true );
 }
 add_action( 'customize_preview_init', 'orange_theme_customize_preview_js' );
